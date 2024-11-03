@@ -1,0 +1,69 @@
+{
+  "name": "Search",
+  "path": "/s",
+  "sections": [
+    {
+      "type": "website",
+      "__resolveType": "website/sections/Seo/Seo.tsx",
+      "titleTemplate": "%s | Deco.cx",
+      "descriptionTemplate": "%s | Deco.cx"
+    },
+    {
+      "__resolveType": "Header - 01"
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/LongBanner.tsx",
+        "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/troiahair/4ce6ff2a-430e-4ac7-8650-3647f010cf88/Imagesn---Banner-Home.png",
+        "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/troiahair/4ce6ff2a-430e-4ac7-8650-3647f010cf88/Imagesn---Banner-Home.png",
+        "alt": "banner pesquisa",
+        "href": "/"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/SearchResult.tsx",
+        "page": {
+          "__resolveType": "vnda/loaders/productListingPage.ts",
+          "tags": [],
+          "count": 15,
+          "filterOperator": {
+            "property1": "and",
+            "property2": "and",
+            "property3": "and",
+            "type_tags": "and"
+          },
+          "filterByTags": false,
+          "slug": {
+            "__resolveType": "website/functions/requestToParam.ts",
+            "param": "slug"
+          }
+        },
+        "layout": {
+          "columns": {
+            "mobile": 1,
+            "desktop": 3
+          },
+          "variant": "aside",
+          "format": "Pagination"
+        },
+        "startingPage": 1,
+        "title": "lorem ipsum",
+        "description": "<p><strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.&nbsp;</p>",
+        "imageNotFound": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/troiahair/17957bb5-9937-4e0f-8c98-46904859d62f/maxresdefault.jpg",
+        "whatsappNumber": 0
+      }
+    },
+    {
+      "__resolveType": "Footer - 01"
+    }
+  ],
+  "__resolveType": "website/pages/Page.tsx",
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx",
+    "type": "website",
+    "description": ""
+  }
+}

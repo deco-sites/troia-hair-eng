@@ -1,0 +1,80 @@
+{
+  "name": "Product Page",
+  "path": "/produto/:slug",
+  "default": {
+    "possiblePaths": []
+  },
+  "sections": [
+    {
+      "jsonLD": {
+        "__resolveType": "vnda/loaders/productDetailsPage.ts",
+        "slug": {
+          "__resolveType": "website/functions/requestToParam.ts",
+          "param": "slug"
+        }
+      },
+      "jsonLDs": [
+        {}
+      ],
+      "__resolveType": "commerce/sections/Seo/SeoPDP.tsx"
+    },
+    {
+      "__resolveType": "Header - 01"
+    },
+    {
+      "page": {
+        "__resolveType": "vnda/loaders/productDetailsPage.ts",
+        "slug": {
+          "__resolveType": "website/functions/requestToParam.ts",
+          "param": "slug"
+        },
+        "priceIntl": false
+      },
+      "__resolveType": "site/sections/Product/ProductDetails.tsx"
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductDescription.tsx",
+        "page": {
+          "__resolveType": "vnda/loaders/productDetailsPage.ts",
+          "slug": {
+            "__resolveType": "website/functions/requestToParam.ts",
+            "param": "slug"
+          }
+        },
+        "layout": {
+          "name": "product"
+        }
+      }
+    },
+    {
+      "__resolveType": "site/sections/Product/ProductShelf.tsx",
+      "title": "Lorem Ipsum",
+      "products": {
+        "__resolveType": "vnda/loaders/productList.ts",
+        "sort": "newest",
+        "tags": [],
+        "typeTags": [],
+        "ids": [],
+        "count": 5
+      },
+      "layout": {
+        "numberOfSliders": {
+          "desktop": 5
+        },
+        "showArrows": false
+      },
+      "whatsappNumber": 0,
+      "imageNotFound": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/troiahair/17957bb5-9937-4e0f-8c98-46904859d62f/maxresdefault.jpg",
+      "description": "lorem ipsum"
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Footer - 05"
+      }
+    }
+  ],
+  "__resolveType": "website/pages/Page.tsx"
+}
